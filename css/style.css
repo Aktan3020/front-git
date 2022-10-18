@@ -1,0 +1,59 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: pink;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 87%;
+  margin: 0 auto;
+}
+.nav__logo {
+  color: white;
+  font-size: 25px;
+}
+.nav__navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.nav__navbar li a {
+  color: white;
+  transition: 0.3s all linear;
+}
+.nav__navbar li a:hover {
+  color: red;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 87%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container__col {
+  width: 25%;
+  height: 250px;
+  background-color: skyblue;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,75 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+$bg-color: pink;
+$white: white;
+$hover-color: red;
+
+@mixin flex-box($space, $width) {
+    display: flex;
+    justify-content: $space;
+    width: $width;
+}
+
+ul {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: $bg-color;
+
+    padding: {
+        top: 25px;
+        bottom: 25px;
+    }
+}
+
+.nav {
+    @include flex-box(space-between, 87%);
+    margin: 0 auto;
+
+    &__logo {
+        color: $white;
+        font-size: 25px;
+    }
+
+    &__navbar {
+        @include flex-box(space-between, 50%);
+
+        li {
+            a {
+                color: $white;
+                transition: 0.3s all linear;
+
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+}
+
+.container {
+    @include flex-box(space-around, 87%);
+
+    margin: {
+        top: 100px;
+        left: auto;
+        right: auto;
+    }
+
+    &__col {
+        width: 25%;
+        height: 250px;
+        background-color: skyblue;
+        border-radius: 20px;
+    }
+}
